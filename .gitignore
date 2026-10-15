@@ -1,0 +1,25 @@
+# Local IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and machine-specific configuration
+**/.env
+**/.env.*
+!**/.env.example
+**/local.properties
+
+# Generated dependencies and build outputs
+**/.dart_tool/
+**/.pub-cache/
+**/.flutter-plugins-dependencies
+**/build/
+**/coverage/
+**/__pycache__/
+
+# Local service data
+docker/supabase/volumes/db/data/
+docker/supabase/volumes/storage/
+docker/supabase/volumes/snippets/*
+!docker/supabase/volumes/snippets/.gitkeep
